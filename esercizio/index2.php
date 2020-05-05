@@ -15,7 +15,15 @@
         $ok = "<div class='check'><h1>Mail scritta correttamente</h1></div>";
         $ko = "<div class='check'><h1>Mail errata</h1></div>";
         $print = "<div class='check'></div>";
-
+        // controllo se il carattere "." o "@" è nella prima posizione
+        //e lo aumento di 1
+        if ($hasDot == 0){
+            $hasDot += 1; 
+        }
+        if ($hasAt == 0){
+            $hasAt += 1;
+        }
+        
         if($hasDot && $hasAt){
             $print = $ok;
         }else{

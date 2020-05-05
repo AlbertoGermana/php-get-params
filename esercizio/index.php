@@ -8,8 +8,8 @@
 </head>
 <body>
     <?php
-        $name = $_GET["name"];
-        $surname = $_GET["surname"];
+        $name = $_GET["giallo"];
+        $surname = $_GET["verde"];
     ?>
     <h1>
         <?php echo 'Hello '. $name . " " . $surname . "!";?>
